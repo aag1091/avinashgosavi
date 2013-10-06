@@ -1,0 +1,10 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+{% for post in paginator.posts %}
+  {% include single_post.html post=post %}  
+{% endfor %}
+
+{% include pagination.html %}
