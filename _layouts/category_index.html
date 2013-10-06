@@ -3,13 +3,11 @@ layout: default
 title: Your New Jekyll Site
 ---
 
-<div id="home">
+<article class='entry-post'>
   <h1>{{ page.title }}</h1>
-  <ul class="posts">
-    {% for post in site.categories[page.category] %}
-      {% include single_post.html post=post %}
-    {% endfor %}
-  </ul>
-</div>
+</article>
+{% for post in site.categories[page.category] %}
+  {% include single_post.html post=post %}
+{% endfor %}
 
 {% include pagination.html %}

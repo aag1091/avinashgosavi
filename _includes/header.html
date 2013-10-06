@@ -33,10 +33,22 @@
     <!-- begin #main_menu -->
     <nav id="main_menu">
       <ul class="primary_menu">
-        <li><a href="/">Blog</a></li>
-        <li><a href="instructions.html">Instructions</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="about.html">About</a></li>
+        {% if page.active == "home" %}
+          <li class="active"><a href="/">My Blog</a></li>
+        {% else %}
+          <li><a href="/">My Blog</a></li>
+        {% endif %}
+        {% if page.active == "about" %}
+          <li class="active"><a href="/about.html">About Me</a></li>
+        {% else %}
+          <li><a href="/about.html">About Me</a></li>
+        {% endif %}
+        {% if page.active == "contact" %}
+          <li class="active"><a href="/contact.html">Contact</a></li>
+        {% else %}
+          <li><a href="/contact.html">Contact</a></li>
+        {% endif %}
+        
       </ul>
     </nav>
     <!-- close / #main_menu --> 

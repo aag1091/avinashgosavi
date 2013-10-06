@@ -1,7 +1,7 @@
 <!-- begin entry-post 1-->
 <article class="entry-post">
   <header class="entry-header">
-    <h3 class="entry-title"><a href="blog-single.html">{{ post.title }}</a></h3>
+    <h3 class="entry-title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
     <div class="byline"><i class="icon-pencil"></i> {{ post.author }} &nbsp;&nbsp; <i class="icon-time"></i> <abbr class="published" title="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</abbr> &nbsp;&nbsp; <a href="#view-comments"><i class="icon-comments-alt"></i> 6 comments</a> </div>
     <div class="entry-meta">
       <i class="icon-folder-open"></i>
@@ -12,7 +12,7 @@
         <a href="/tag/{{ tag }}" class='tag'>{{ tag }}</a>
       {% endfor %}
       &nbsp;&nbsp;
-      <a href="blog-single.html">
+      <a href="{{ BASE_PATH }}{{ post.url }}">
         <i class="icon-link"></i> Permalink
       </a>
     </div>
@@ -22,11 +22,11 @@
   <!--begin loop of entry-posts for summary page-->
   
   <div class="entry-content">
-    <figure> <a href="blog-single.html" class="hover"><img src="/images/first-meet.jpg" alt=""><span class="plus"></span></a>
-      <figcaption>This is a figcaption. Image credit: <a href="http://www.flickr.com/photos/fontfont/4830134044/">CC BY 2.0 FontFont</a></figcaption>
+    <figure> <a href="{{ BASE_PATH }}{{ post.url }}" class="hover"><img src="/images/first-meet.jpg" alt=""><span class="plus"></span></a>
+      <figcaption>This is a figcaption. Image credit: <a href="/images/first-meet.jpg">CC BY 2.0 FontFont</a></figcaption>
     </figure>
     <p>{{ post.excerpt }}</p>
-    <p class="more right"><a class="btn btn-primary" href="blog-single.html">Read More &rarr;</a> 
+    <p class="more right"><a class="btn btn-primary" href="{{ BASE_PATH }}{{ post.url }}">Read More &rarr;</a> 
   </div>
   <!-- close entry-content -->
   
