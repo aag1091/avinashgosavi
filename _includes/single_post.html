@@ -2,7 +2,7 @@
 <article class="entry-post">
   <header class="entry-header">
     <h3 class="entry-title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
-    <div class="byline"><i class="icon-pencil"></i> {{ post.author }} &nbsp;&nbsp; <i class="icon-time"></i> <abbr class="published" title="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</abbr> &nbsp;&nbsp; <a href="#view-comments"><i class="icon-comments-alt"></i> 6 comments</a> </div>
+    <div class="byline"><i class="icon-pencil"></i> {{ post.author }} &nbsp;&nbsp; <i class="icon-time"></i> <abbr class="published" title="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</abbr> &nbsp;&nbsp; <a href="#view-comments"><i class="icon-comments-alt"><a href="{{ BASE_PATH }}{{ post.url }}#disqus_thread">Link</a> </div>
     <div class="entry-meta">
       <i class="icon-folder-open"></i>
       <a href="#">{{ post.category }}</a>
