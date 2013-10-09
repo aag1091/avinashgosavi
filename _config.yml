@@ -3,3 +3,4 @@ markdown: redcarpet
 paginate: 10
 paginate_path: "/page:num"
 pygments: true
+comments: true
