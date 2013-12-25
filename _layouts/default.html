@@ -70,10 +70,6 @@ with yours and get your fb:admis content information where the XXXX goes.
     <p class="right"><a class="btn btn-primary scrollto" href="#secondary-nav">Blog Menu &nbsp;<i class="icon-align-justify"></i></a></p>
   </div>
   <div class="hero-unit">
-    <div class="container">
-      <h2>My Ruby On Rails Blog</h2>
-    </div>
-    <!--close container--> 
   </div>
   <!--close hero-unit-->
   
@@ -81,7 +77,11 @@ with yours and get your fb:admis content information where the XXXX goes.
     <!--begin main content-->
     <div class="row-fluid sidebar-right"> 
       <!--begin row-fluid-->
-      <div class="span9 blog-summary primary-column">
+      {% if page.active == 'post' %}
+        <div class="span9 blog-detail primary-column">
+      {% else %}
+        <div class="span9 blog-summary primary-column">
+      {% endif %}
         {{ content }}
       </div>
       <!-- close .span9 . primary-column .blog-summary-->
@@ -113,6 +113,17 @@ var disqus_shortname = 'myrorblog'; // required: replace example with your forum
     s.src = '//' + disqus_shortname + '.disqus.com/count.js';
     (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44814206-1', 'avinashgosavi.com');
+  ga('send', 'pageview');
+
 </script>
 
 </body>
