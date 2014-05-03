@@ -32,7 +32,7 @@ body.tall-logo nav.user {
 
 #logo, #logo img {
 	/* width and height of logo desktop NON retina - this is the regular size logo */
-	width: 140px;
+	width: 450px;
 	height: 59px;
 }
 
@@ -41,7 +41,8 @@ body.tall-logo nav.user {
 	float: left;
 	position: relative;
 	margin-top: 18px;
-	background: url(../images/logo.png) no-repeat;
+	color: #FFFFFF;
+	font-size: 3em;
 }
 
 /* ie 7 fix*/
@@ -82,7 +83,6 @@ body.tall-logo nav.user {
 	margin-top: 0;
 	padding: 0;
 	top: -47px;
-	background-image: url(../images/tall-logo-desktop.png);
 	background-color: transparent;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -476,9 +476,10 @@ body.tall-logo nav.user {
 		background-position: 50% 50%;
 		display: block;
 		width: 100%;
-		height: 59px;
-		margin: 0;
-		padding: 10px 0!important;
+		height: 40px;
+    margin: 0 20px;
+    padding: 10px 0!important;
+		font-size: 2em;
 	}
 	
 	.container.preheader {
@@ -677,7 +678,6 @@ body.tall-logo nav.user {
 	}
 	
 	body.tall-logo #logo {
-		background-image: url(../images/tall-logo-mobile.png);
 		/*notice that this image changes on mobile */
 		background-color: transparent!important;
 		background-position: 0 0;
@@ -736,7 +736,6 @@ body.tall-logo nav.user {
  	only screen and (min--moz-device-pixel-ratio: 2),
 	only screen and (min-device-pixel-ratio: 2) {
 	#logo {
-		background-image: url(../images/retina/logo_@2x.png);
 		-moz-background-size: 140px 59px;
 		/*w & h of total ORIGINAL 72dpi image*/
 		-ie-background-size: 140px 59px;
@@ -746,7 +745,6 @@ body.tall-logo nav.user {
 	}
 	
 	.tall-logo #logo {
-		background-image: url(../images/retina/tall-logo-mobile_@2x.png);
 		-moz-background-size: 170px 185px;
 		/*w & h of total image 72dpi image*/
 		-ie-background-size: 170px 185px;
@@ -789,7 +787,6 @@ body.tall-logo nav.user {
  	only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2),
 	only screen and (max-width: 767px) and (min-device-pixel-ratio: 2) {
 	.tall-logo #logo {
-		background-image: url(../images/retina/tall-logo-mobile_@2x.png);
 		-moz-background-size: 78px 85px;
 		/*w & h of total image 72dpi image*/
 		-ie-background-size: 78px 85px;
@@ -799,7 +796,6 @@ body.tall-logo nav.user {
 	}
 	
 	.mobile_nav a span {
-		background-image: url(../images/retina/navtriggerbg_@2x.png);
 		-moz-background-size: 80px 40px;
 		/*w & h of total sprite 72dpi image*/
 		-ie-background-size: 80px 40px;
